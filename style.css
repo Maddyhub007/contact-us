@@ -1,92 +1,103 @@
-body, html {
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
+}
+
+body {
     font-family: Arial, sans-serif;
-
-}
-
-.container
-{
+    background-color: #fff;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(#d77ec5,#f130ca);
-    border-radius: 15px;
 }
 
-.left-section, .right-section
-{
-    flex: 1;
+.container {
+    background-color: #eb0a98;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding:80px 20px;
 }
 
-.left-section{
-    background-color: #f130ca;
+.left-section {
+    background-color: #eb0a98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  20px;
+    position: relative;
+    border-radius: 20px;
+    flex-direction: column;
 }
-.left-section img{
-    max-width: 50%;
+
+
+
+.dora-img {
+    max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
     border-radius: 10px;
-    
-    background-color: #f130ca;
 }
 
 .right-section {
-    background: linear-gradient(to bottom,rgb(195, 59, 195),rgb(99, 5, 127));
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(213, 10, 10, 0.1);
-    border-radius: 10px;
+    background-color: rgb(164, 12, 164);
+    transition: background-color 300ms;
+    padding: 20px;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 50%;
 }
 
 .right-section h2 {
     margin-bottom: 10px;
-    font-size: 24px;
-    color: #fafaf6;
+    font-size: 28px;
 }
 
 .right-section p {
     margin-bottom: 20px;
     font-size: 16px;
-    color: #ece5e5;
+    text-align: center;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-    outline: 2px solid #f130ca;
-    
-}
-
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    
 }
-form button {
-    padding: 10px 20px;
-    background-color: #f130ca;
-    border: none;
+
+form input,
+form textarea {
+    margin-bottom: 30px;
+    padding: 10px;
     border-radius: 5px;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 50%;
-
+    outline: 5px solid #eb0a98 ;
+    font-size: 14px;
+    border: none;
+    width: 60%;
 }
 
-form button:hover {
-    background-color: #ff4500;
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    background-color: #ff1eac;
+    color: white;
+    padding: 12px;
+    height: 7.5vh;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 40%;
 }
